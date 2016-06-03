@@ -1,0 +1,17 @@
+.header{ position:relative;
+	width: 100%;
+	height: 150px;
+	margin-bottom:50px;
+}
+.content{ 
+	margin-top:150px;
+	height:1000px;
+	  
+}
+.defoult_table{
+	margin-top:0px;
+}
+.table{
+	margin-top:0px;
+}
+h3{margin-top:0px;}

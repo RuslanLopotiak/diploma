@@ -1,0 +1,21 @@
+.coments{
+	max-width: 600px;
+	margin-left: 20%;
+	margin-bottom: 40px;
+	
+}
+#coment{
+	height: 100px;
+	
+}
+#addComent{
+  margin-left: 80%;
+  margin-top: 5px;
+  height: 40px;
+	
+}
+@media screen and (max-width: 767px) {
+.coments{
+	width: 100%;
+	margin-left: 0;
+}

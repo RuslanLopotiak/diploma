@@ -1,0 +1,62 @@
+.header{ height:100px;
+background-color: rgb(54,121,179) ;
+position:fixed;
+top:0px;
+z-index:10;
+}
+.content{    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.header li {
+    float: left;
+}
+
+.header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    height:100px;
+    margin-top:0;
+    padding-top:50px;
+    text-decoration: none;
+    width:200px;
+}
+
+/* Change the link color to #111 (black) on hover */
+.header li a:hover {
+    background-color: #111;
+     border-right: 20px solid rgb(96,182,96);
+     transition:0.5s;
+}
+.active {
+    background-color: #4CAF50;
+}
+.header input.rounded {
+	margin-top:35px;
+	float:right;
+	margin-right:50px;
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 2px 2px 3px #666;
+	-webkit-box-shadow: 2px 2px 3px #666;
+	box-shadow: 2px 2px 3px #666;
+	font-size: 20px;
+	padding: 4px 7px;
+	outline: 0;
+	-webkit-appearance: none;
+	
+}
+.header input.rounded:focus {
+	border-color: #339933;
+}
