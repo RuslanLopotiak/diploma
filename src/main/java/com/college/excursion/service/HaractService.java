@@ -1,4 +1,4 @@
-package com.college.exursion.service;
+package com.college.excursion.service;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import com.college.excursion.model.Haract;
 public interface HaractService {
 	
 	public Haract searchByName(String name);
-	Haract findById(long id);
+	Haract findById(Integer id);
 	
 	List<Haract> findAll();
 	

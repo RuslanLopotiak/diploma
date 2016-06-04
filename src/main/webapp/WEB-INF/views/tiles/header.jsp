@@ -7,6 +7,7 @@
 <li><a href="${context}/group">Групи</a></li>
 <li><a href="${context}/student">Студенти</a></li>
 <li><a href="${context}/haract">Характеристики</a></li>
+<li><a href="<c:url value="/j_spring_security_logout"/>">Вихід</a></li>
 <input type="text" class="rounded" /> 
 </ul>
 </div>

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.college.excursion.dao.GrouppDao;
 import com.college.excursion.model.Groupp;
-import com.college.exursion.service.GrouppService;
+import com.college.excursion.service.GrouppService;
 
 @Service
 public class GrouppServiceImp implements GrouppService{
@@ -34,13 +34,12 @@ GrouppDao grpdao;
 	public void save(Groupp entity) {
 		grpdao.save(entity);
 	}
-
+	@Transactional
 	@Override
-	public void save(String groupName, int groupID, String facult, int kilkistStud) {
+	public void save(String groupName, int groupID, String facult) {
 		Groupp temp=new Groupp();
 		temp.setGroupID(groupID);
-		temp.setFacult(facult);
-		temp.setKilkistStud(kilkistStud);
+		temp.setFacult(facult);;
 		grpdao.save(temp);
 	}
 
@@ -53,5 +52,6 @@ GrouppDao grpdao;
 	public void update(Groupp entity) {
 		grpdao.update(entity);
 	}
+	
 
 }

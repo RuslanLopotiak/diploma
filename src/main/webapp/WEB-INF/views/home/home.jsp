@@ -13,7 +13,7 @@
 		<h2 class="form-signin-heading">Please sign in</h2>
 			<p class="lead"> ${fail}</p>
 		<label for="inputEmail" class="sr-only">User name</label> <input
-			type="name" class="form-control" name="name" placeholder="text"
+			type="text" class="form-control" name="email" placeholder="email"
 			required autofocus> <label for="inputPassword"
 			class="sr-only">Password</label> <input type="password"
 			class="form-control" name="password" placeholder="password" required>

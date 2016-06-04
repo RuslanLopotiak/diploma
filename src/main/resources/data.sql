@@ -4,3 +4,5 @@ INSERT INTO `Price` (`minMamber`,`maxMamber`,`price`,`excursion_id`) VALUES (1,5
 INSERT INTO `Price` (`minMamber`,`maxMamber`,`price`,`excursion_id`) VALUES (1,5,400,3),(6,10,450,3),(11,20,550,3),(21,50,650,3);
 INSERT INTO `Price` (`minMamber`,`maxMamber`,`price`,`excursion_id`) VALUES (1,5,200,4),(6,10,250,4),(11,20,300,4),(21,50,400,4);
 INSERT INTO `Coments` (`userName`,`coment`) VALUES ("Петро","ЗБС");*/
+INSERT INTO `Student` (`email`,`password`,`age`) VALUES ("aa","aa",0);
+INSERT INTO `Teather` (`email`,`password`,`age`) VALUES ("2","2",0);

@@ -28,7 +28,7 @@ public class Haract {
 
 	@Id
 	@GeneratedValue
-	private long id;
+	private int id;
 	private int Iq;
 	private String temper;
 	private String socium;
@@ -48,15 +48,15 @@ public class Haract {
 		this.mozok = mozok;
 	}
 
-	public long getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
-	public int getIq() {
+	public Integer getIq() {
 		return Iq;
 	}
 

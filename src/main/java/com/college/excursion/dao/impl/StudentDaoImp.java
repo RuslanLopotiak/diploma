@@ -1,5 +1,10 @@
 package com.college.excursion.dao.impl;
 
+import java.util.List;
+
+import javax.inject.Inject;
+import javax.transaction.Transactional;
+
 import org.springframework.stereotype.Repository;
 
 import com.college.excursion.dao.GrouppDao;
@@ -12,6 +17,12 @@ public class StudentDaoImp extends BaseDaoImpl<Student, Integer> implements Stud
 	public StudentDaoImp() {
 		super(Student.class);
 		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public Student findByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

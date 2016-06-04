@@ -19,20 +19,19 @@ public class Groupp {
 	private String groupName;
 	private int groupID;
 	private String Facult;
-	private int KilkistStud;
 	@OneToMany(fetch = FetchType.EAGER, mappedBy = "groupp")
 	private List<Student> students;
 
 	public Groupp() {
 	}
 
-	public Groupp(String groupName, int groupID, String facult, int kilkistStud) {
+	public Groupp(String groupName, int groupID, String facult) {
 		super();
 
 		this.groupName = groupName;
 		this.groupID = groupID;
 		Facult = facult;
-		KilkistStud = kilkistStud;
+
 	}
 	
 	
@@ -77,12 +76,5 @@ public class Groupp {
 		Facult = facult;
 	}
 
-	public int getKilkistStud() {
-		return KilkistStud;
-	}
-
-	public void setKilkistStud(int kilkistStud) {
-		KilkistStud = kilkistStud;
-	}
 
 }

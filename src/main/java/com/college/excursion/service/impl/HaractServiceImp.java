@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.college.excursion.dao.GrouppDao;
 import com.college.excursion.dao.HaractDao;
 import com.college.excursion.model.Haract;
-import com.college.exursion.service.HaractService;
+import com.college.excursion.service.HaractService;
 
 @Service
 public class HaractServiceImp implements HaractService {
@@ -25,7 +25,7 @@ public class HaractServiceImp implements HaractService {
 	}
 
 	@Override
-	public Haract findById(long id) {
+	public Haract findById(Integer id) {
 		// TODO Auto-generated method stub
 		return haractdao.findById(id);
 	}

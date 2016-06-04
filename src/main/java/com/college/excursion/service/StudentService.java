@@ -1,23 +1,24 @@
-package com.college.exursion.service;
+package com.college.excursion.service;
 
 import java.util.List;
-
 
 import com.college.excursion.model.Student;
 
 public interface StudentService {
 
 	public Student searchByName(String name);
-	Student findById(int id);
-	
-	List<Student> findAll();
-	
-	void save(Student entity);
-	
-	void save(String name, String sname, int age, String passport, int group_ID);
 
+	Student findById(int id);
+
+	List<Student> findAll();
+
+	void save(Student entity);
 
 	void remove(Student entity);
 
 	void update(Student entity);
+
+	public List<Student> getAllByGroupp(int id);
+
+	public Student findByEmail(String email);
 }

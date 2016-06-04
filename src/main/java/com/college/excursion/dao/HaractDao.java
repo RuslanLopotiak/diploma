@@ -4,6 +4,6 @@ import java.util.List;
 
 import com.college.excursion.model.Haract;
 
-public interface HaractDao extends BaseDao<Haract, Long> {
+public interface HaractDao extends BaseDao<Haract, Integer> {
 	
 }

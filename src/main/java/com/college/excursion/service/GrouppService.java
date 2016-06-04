@@ -1,4 +1,4 @@
-package com.college.exursion.service;
+package com.college.excursion.service;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ public interface GrouppService {
 	
 	void save(Groupp entity);
 	
-	void save(String groupName, int groupID, String facult, int kilkistStud);
+	void save(String groupName, int groupID, String facult);
 
 
 	void remove(Groupp entity);

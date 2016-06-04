@@ -6,4 +6,5 @@ import com.college.excursion.model.Student;
 
 public interface StudentDao extends BaseDao<Student,Integer> {
 
+	public Student findByEmail(String email);
 }
