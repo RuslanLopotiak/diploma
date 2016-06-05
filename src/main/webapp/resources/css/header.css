@@ -1,10 +1,11 @@
-.header{ height:100px;
+.header{ height:75px;
 background-color: rgb(54,121,179) ;
 position:fixed;
 top:0px;
 z-index:10;
 }
-.content{    padding-top: 0px;
+.content{  
+	padding-top: 0px;
     padding-right: 0px;
     padding-bottom: 0px;
     padding-left: 0px;}
@@ -24,11 +25,12 @@ ul {
     display: block;
     color: white;
     text-align: center;
-    height:100px;
+    height:75px;
     margin-top:0;
-    padding-top:50px;
+    padding-top:30px;
     text-decoration: none;
-    width:200px;
+    width:150px;
+      border-right: 20px solid №;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -41,7 +43,7 @@ ul {
     background-color: #4CAF50;
 }
 .header input.rounded {
-	margin-top:35px;
+	margin-top:20px;
 	float:right;
 	margin-right:50px;
 	border: 1px solid #ccc;

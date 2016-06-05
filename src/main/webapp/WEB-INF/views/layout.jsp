@@ -16,7 +16,7 @@
 	href="<c:url value="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css" />"
 	rel="stylesheet">
 
-	<link href="<c:url value="/resources/css/main.css" />" rel="stylesheet">
+	<link href="<c:url value="/resources/css/main12.css" />" rel="stylesheet">
 <link href="<c:url value="/resources/css/header.css" />" rel="stylesheet">
 <link href="<c:url value="/resources/css/home.css" />" rel="stylesheet">
 <link href="<c:url value="/resources/css/admin.css" />" rel="stylesheet">
@@ -29,10 +29,6 @@
 
 </head>
 <body>
-<%-- 	<div class="sidebar">
-		<tiles:insertAttribute name="sidebar" />
-	</div>
-	--%>
 <div class="header">
 		<tiles:insertAttribute name="header" />
 	</div>  
@@ -42,5 +38,9 @@
 	<%-- <div class="footer">
 		<tiles:insertAttribute name="footer" />
 	</div> --%>
+
+ 	<div class="news">
+		<tiles:insertAttribute name="news" />
+	</div>
 </body>
 </html>

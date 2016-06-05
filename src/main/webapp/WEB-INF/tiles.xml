@@ -8,7 +8,7 @@
 	<definition name="base.definition" template="/WEB-INF/views/layout.jsp">
 		<put-attribute name="header" value="/WEB-INF/views/tiles/header.jsp" />
 		<put-attribute name="main_content" value="" />
-		
+		<put-attribute name="news" value="/WEB-INF/views/tiles/news.jsp" />
 	</definition>
 
 	<definition name="home" extends="base.definition">
@@ -32,6 +32,35 @@
 		<put-attribute name="title" value="Студенти" />
 		<put-attribute name="main_content" value="/WEB-INF/views/student/student.jsp" />
 	</definition>
+		<definition name="login" extends="base.definition">
+		<put-attribute name="title" value="Вхід" />
+		<put-attribute name="main_content" value="/WEB-INF/views/login/login.jsp" />
+	</definition>
+		<definition name="registration" extends="base.definition">
+		<put-attribute name="title" value="Вхід" />
+		<put-attribute name="main_content" value="/WEB-INF/views/login/registration.jsp" />
+	</definition>
+		<definition name="registrationTeath" extends="base.definition">
+		<put-attribute name="title" value="Регістрація вчителя" />
+		<put-attribute name="main_content" value="/WEB-INF/views/login/registrationTeath.jsp" />
+	</definition>
+		<definition name="registrationSt" extends="base.definition">
+		<put-attribute name="title" value="Регістрація студента" />
+		<put-attribute name="main_content" value="/WEB-INF/views/login/registrationSt.jsp" />
+	</definition>
+		<definition name="teathers" extends="base.definition">
+		<put-attribute name="title" value="Викладачі" />
+		<put-attribute name="main_content" value="/WEB-INF/views/teathers/teathers.jsp" />
+	</definition>
+	<definition name="redactNews" extends="base.definition">
+		<put-attribute name="title" value="Новни" />
+		<put-attribute name="main_content" value="/WEB-INF/views/admin/redactNews.jsp" />
+	</definition>
+		<definition name="test" extends="base.definition">
+		<put-attribute name="title" value="Тести" />
+		<put-attribute name="main_content" value="/WEB-INF/views/user/test.jsp" />
+	</definition>
+	
 
 
 </tiles-definitions>

@@ -14,13 +14,13 @@
 		as Spring beans -->
 	<import resource="security.xml" />
 
-	<context:component-scan base-package="com.college.excursion.dao"
+	<context:component-scan base-package="com.diplom.dao"
 		use-default-filters="false">
 		<context:include-filter expression="org.springframework.stereotype.Repository"
 			type="annotation"  />
 	</context:component-scan>
 
-	<context:component-scan base-package="com.college.excursion.service"
+	<context:component-scan base-package="com.diplom.service"
 		use-default-filters="false">
 		<context:include-filter expression="org.springframework.stereotype.Service"
 			type="annotation" />
@@ -41,7 +41,7 @@
 
 	<bean id="entityManagerFactory"
 		class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
-		p:packagesToScan="com.college.excursion.model" p:dataSource-ref="dataSource">
+		p:packagesToScan="com.diplom.model" p:dataSource-ref="dataSource">
 		<property name="jpaVendorAdapter">
 			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
 		</property>

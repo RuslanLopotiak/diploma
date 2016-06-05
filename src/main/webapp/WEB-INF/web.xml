@@ -21,7 +21,7 @@
 
 
 	<listener>
-		<listener-class>com.college.excursion.listener.InitContextListener</listener-class>
+		<listener-class>com.diplom.listener.InitContextListener</listener-class>
 	</listener>
 
 	<listener>

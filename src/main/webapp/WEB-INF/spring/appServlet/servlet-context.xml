@@ -44,7 +44,7 @@
 		</beans:property>
 	</beans:bean>
 	
-	<context:component-scan base-package="com.college.excursion.controller"	use-default-filters="false">
+	<context:component-scan base-package="com.diplom.controller"	use-default-filters="false">
 		<context:include-filter expression="org.springframework.stereotype.Controller"
 			type="annotation" />
 	</context:component-scan>

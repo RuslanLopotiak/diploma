@@ -9,15 +9,15 @@
 	<http pattern="/css/**" security="none" />
 
 	<http auto-config="true" use-expressions="true">
-		<form-login authentication-failure-url="/"
-			 login-processing-url="/login_admin"
+		<form-login authentication-failure-url="/registration"
+			 login-processing-url="/login_user"
 			password-parameter="password" username-parameter="email"
-			default-target-url="/admin" login-page="/admin" />
+			default-target-url="/home" login-page="/home" />
 	</http>
 	<beans:bean id="customAFH"
-		class="com.college.excursion.listener.CustomAuthenticationFailureHandler" />
+		class="com.diplom.listener.CustomAuthenticationFailureHandler" />
 		<beans:bean id="userDetailsService"
-		class="com.college.excursion.service.impl.UserDetailsServiceImpl" />
+		class="com.diplom.service.impl.UserDetailsServiceImpl" />
 
 
 	<authentication-manager>
