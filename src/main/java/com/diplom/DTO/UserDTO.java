@@ -17,12 +17,18 @@ public class UserDTO {
 	private int age;
 	private Haract haract;
 	private Dialog dialog;
+	private String role;
+	
 	public UserDTO() {
 		
 	}
 	
+	
+	
+	
+
 	public UserDTO(int id, String email, String password, String name, String sname, int age, Haract haract,
-			Dialog dialog) {
+			Dialog dialog, String role) {
 		super();
 		this.id = id;
 		this.email = email;
@@ -32,9 +38,28 @@ public class UserDTO {
 		this.age = age;
 		this.haract = haract;
 		this.dialog = dialog;
+		this.role = role;
 	}
-	
-	
+
+
+
+
+
+	public String getRole() {
+		return role;
+	}
+
+
+
+
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+
+
+
 
 	public Haract getHaract() {
 		return haract;

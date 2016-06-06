@@ -2,6 +2,7 @@ package com.diplom.model;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
@@ -14,7 +15,7 @@ public class Dialog {
 	@Id
 	@GeneratedValue
 	private int id;
-	@OneToMany(fetch = FetchType.EAGER, mappedBy = "dialog")
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "dialog", cascade=CascadeType.ALL)
 	private List<Messege> messeges;
 	public Dialog() {
 		

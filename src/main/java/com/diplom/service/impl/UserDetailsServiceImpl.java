@@ -14,6 +14,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.diplom.DTO.LoginedUser;
+import com.diplom.DTO.UserDTO;
 import com.diplom.dao.StudentDao;
 import com.diplom.dao.TeatherDao;
 import com.diplom.model.Student;
@@ -36,13 +38,15 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 			if (teather == null)
 				throw new UsernameNotFoundException("Error in email");
 			
-			
+			LoginedUser.loginedUser= new UserDTO(teather.getId(), teather.getEmail(), teather.getPassword(), teather.getName(),
+					teather.getSname(), teather.getAge(), teather.getHaract(), teather.getDialog(),"teather");
 			Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
 			authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
 			return new User(teather.getId().toString(), teather.getPassword(), authorities);
 			
 		}
-
+		LoginedUser.loginedUser= new UserDTO(student.getId(), student.getEmail(), student.getPassword(), student.getName(),
+				student.getSname(), student.getAge(), student.getHaract(), student.getDialog(),"Student");
 		Collection<SimpleGrantedAuthority> authorities = new ArrayList<>();
 		authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
 		return new User(student.getId().toString(), student.getPassword(), authorities);

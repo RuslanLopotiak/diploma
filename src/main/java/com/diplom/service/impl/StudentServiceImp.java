@@ -13,6 +13,7 @@ import com.diplom.DTO.StudentDTO;
 import com.diplom.dao.GrouppDao;
 import com.diplom.dao.StudentDao;
 import com.diplom.model.Groupp;
+import com.diplom.model.Messege;
 import com.diplom.model.Student;
 import com.diplom.service.StudentService;
 
@@ -91,5 +92,23 @@ public class StudentServiceImp implements StudentService {
 
 		return null;
 	}
-
+	@Override
+	public List<Student> getNotAnswerStudent(){
+		int count;
+		List<Student> studentsresult = new ArrayList<>();
+		List<Student> students = studdao.findAll();
+		for (Student student : students) {
+			count = 0;
+			if(student.getDialog().getMesseges() != null)
+			for (Messege messege : student.getDialog().getMesseges()) {
+				if(count == 0)
+				if(!messege.isCheckMes()){
+					studentsresult.add(student);
+					count ++;
+				}
+			}
+		}
+		return studentsresult;
+		
+	}
 }

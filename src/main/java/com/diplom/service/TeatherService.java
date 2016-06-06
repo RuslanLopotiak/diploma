@@ -16,4 +16,6 @@ public interface TeatherService {
 	void remove(Teather entity);
 
 	void update(Teather entity);
+	
+	public List<Teather> getNotAnswerTeather();
 }

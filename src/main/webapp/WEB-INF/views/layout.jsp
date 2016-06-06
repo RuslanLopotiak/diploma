@@ -19,7 +19,7 @@
 	<link href="<c:url value="/resources/css/main12.css" />" rel="stylesheet">
 <link href="<c:url value="/resources/css/header.css" />" rel="stylesheet">
 <link href="<c:url value="/resources/css/home.css" />" rel="stylesheet">
-<link href="<c:url value="/resources/css/admin.css" />" rel="stylesheet">
+<%-- <link href="<c:url value="/resources/css/admin.css" />" rel="stylesheet"> --%>
 <script type="text/javascript"
 	src="<c:url value="https://code.jquery.com/jquery-2.2.3.min.js"/>"></script>
 <script type="text/javascript"

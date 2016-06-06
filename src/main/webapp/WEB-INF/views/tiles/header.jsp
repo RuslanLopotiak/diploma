@@ -19,17 +19,17 @@
 <li><a href="${context}/student">Студенти</a></li>
 	 <li><a href="${context}/teathers">Викладачі</a></li>
 		<li><a href="${context}/redactNews">Новини</a></li>
+		<li><a href="${context}/answerMessege">Повідомлення</a></li>
 </sec:authorize>
 	<sec:authorize access="hasRole('ROLE_USER')">
 	<li><a href="${context}/test">Тести</a></li>
-<%-- <li><a href="${context}/messege">Повідомлення</a></li>  --%>
+ <li><a href="${context}/messege">Діалог з психологом</a></li> 
 </sec:authorize>
 <sec:authorize access="isAuthenticated()">
 	<li><a href="<c:url value="/j_spring_security_logout"/>">Вихід</a></li>
 </sec:authorize>
 
 
-<input type="text" class="rounded" placeholder="Пошук..." >
 
 </ul>
 </div>

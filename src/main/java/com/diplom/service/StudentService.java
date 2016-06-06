@@ -24,4 +24,6 @@ public interface StudentService {
 	public List<Student> getAllByGroupp(int id);
 
 	public Student findByEmail(String email);
+	
+	public List<Student> getNotAnswerStudent();
 }

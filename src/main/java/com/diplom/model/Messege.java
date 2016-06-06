@@ -9,6 +9,8 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 public class Messege {
 	@Id
@@ -30,10 +32,8 @@ public class Messege {
 
 
 
-	public Messege(int id, String title, String textMes, boolean ansver, boolean checkMes, Dialog dialog) {
+	public Messege( String textMes, boolean ansver, boolean checkMes, Dialog dialog) {
 		super();
-		this.id = id;
-		this.title = title;
 		this.textMes = textMes;
 		this.ansver = ansver;
 		this.checkMes = checkMes;
@@ -101,7 +101,7 @@ public class Messege {
 	}
 
 
-
+	@JsonIgnore
 	public Dialog getDialog() {
 		return dialog;
 	}

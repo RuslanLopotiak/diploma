@@ -20,36 +20,8 @@
 <a class="btn btn-success col-xs-5" href="" data-toggle="modal"
 	data-target="#myModalAdd">Добавити групу</a>
 <!-- Modal -->
-<div id="myModalEdit" class="modal fade" role="dialog">
-	<div class="modal-dialog">
 
-		<!-- Modal content-->
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
-				<h4 class="modal-title">Edit</h4>
-			</div>
-			<div class="modal-body">
-				<h3>Id</h3>
-				<input class="form-control" type="text" name="textID">
-				<h3>Назва групи</h3>
-				<input class="form-control" type="text" name="textID">
-				<h3>Факультет</h3>
-				<input class="form-control" type="text" name="textID">
-				<h3>Номер групи</h3>
-				<input class="form-control" type="text" name="textID">
-				<h3>Кількість студентів</h3>
-				<input class="form-control" type="text" name="textID"> <a
-					class="btn btn-primary col-xs-5" href="">OK</a>
 
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			</div>
-		</div>
-
-	</div>
-</div>
 <!-- АДД -->
 <div id="myModalAdd" class="modal fade" role="dialog">
 	<div class="modal-dialog">

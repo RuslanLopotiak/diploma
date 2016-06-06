@@ -61,6 +61,34 @@
 		<put-attribute name="main_content" value="/WEB-INF/views/user/test.jsp" />
 	</definition>
 	
+		<definition name="testkomun" extends="base.definition">
+		<put-attribute name="title" value="Тест на комунікацію" />
+		<put-attribute name="main_content" value="/WEB-INF/views/user/tests/testkomun.jsp" />
+	</definition>
+	
+	<definition name="testnaviv" extends="base.definition">
+		<put-attribute name="title" value="Тест на навіювання" />
+		<put-attribute name="main_content" value="/WEB-INF/views/user/tests/testnaviv.jsp" />
+	</definition>
+	
+	<definition name="teststres" extends="base.definition">
+		<put-attribute name="title" value="Тест на стресостійкість" />
+		<put-attribute name="main_content" value="/WEB-INF/views/user/tests/teststres.jsp" />
+	</definition>
+	
+	<definition name="testtemper" extends="base.definition">
+		<put-attribute name="title" value="Тест на темперамент" />
+		<put-attribute name="main_content" value="/WEB-INF/views/user/tests/testtemper.jsp" />
+	</definition>
+	
+	<definition name="messege" extends="base.definition">
+		<put-attribute name="title" value="Повідомлення" />
+		<put-attribute name="main_content" value="/WEB-INF/views/messege/messege.jsp" />
+	</definition>
+	<definition name="answerMessege" extends="base.definition">
+		<put-attribute name="title" value="Повідомлення" />
+		<put-attribute name="main_content" value="/WEB-INF/views/admin/answerMessege.jsp" />
+	</definition>
 
 
 </tiles-definitions>
