@@ -26,19 +26,6 @@
 					</div>
 					<div class="modal-body">
 						<div id="haractRes">
-							<div>
-								<h4>Комунікативнісь</h4>
-								<input value="ZBS" type="text" class="form-control"
-									readonly="readonly">
-								<h4>Навіювання</h4>
-								<input value="ZBS" class="form-control" readonly="readonly">
-								<h4>Стесостійкість</h4>
-								<input value="ZBS" class="form-control" readonly="readonly">
-								<h4>Темперамент</h4>
-								<input value="ZBS" class="form-control" readonly="readonly">
-							</div>
-						</div>
-
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

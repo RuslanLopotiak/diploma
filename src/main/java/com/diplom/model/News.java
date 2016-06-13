@@ -70,6 +70,4 @@ public class News {
 		time = new Date();
 	}
 	
-	
-	
 }

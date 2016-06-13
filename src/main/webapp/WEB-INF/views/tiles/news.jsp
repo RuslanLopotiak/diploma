@@ -38,4 +38,5 @@
 	<div class="button">
 <i class="fa fa-question-circle-o  fa-4x" aria-hidden="true"></i>
 </div>
+<h3>Диплом Руслана Лопотяка</h3>
 	</div>

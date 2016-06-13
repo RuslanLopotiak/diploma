@@ -102,7 +102,7 @@ function getHaractRes() {
 		contentType : "application/json",
 		success : function(data) {
 			var content = $('<div>');
-			var komun = "<h4>Комунікативнісь</h4>";
+			var komun = "<h4>Комунікативність</h4>";
 			var inputKomun = $('<input>').attr("type", "text").attr("class",
 					"form-control").attr("readonly", "");
 			if (data.komun == null) {
@@ -118,7 +118,7 @@ function getHaractRes() {
 			} else {
 				inputNaviv.attr("value", data.naviv)
 			}
-			var stres = "<h4>Стесостійкість</h4>";
+			var stres = "<h4>Стресостійкість</h4>";
 			var inputStres = $('<input>').attr("class", "form-control").attr(
 					"readonly", "");
 			if (data.stres == null) {

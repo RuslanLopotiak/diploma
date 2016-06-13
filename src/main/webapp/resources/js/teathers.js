@@ -78,7 +78,7 @@ function getHaractRes() {
 			} else {
 				inputNaviv.attr("value", data.naviv)
 			}
-			var stres = "<h4>Стесостійкість</h4>";
+			var stres = "<h4>Стресостійкість</h4>";
 			var inputStres = $('<input>').attr("class", "form-control").attr(
 					"readonly", "");
 			if (data.stres == null) {

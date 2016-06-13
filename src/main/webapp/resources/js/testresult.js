@@ -217,17 +217,17 @@ function testkomun() {
 				summ += result[i];
 				
 			}
-			if (summ<=30 && summ>=32 ) {
+			if (summ>=30 && summ<=32 ) {
 				testresult="Навіювання присутнє"
-			}else if (summ<=25 && summ>=29 ){
+			}else if (summ>=25 && summ<=29 ){
 				testresult="Абсолютно замкнутий"
-			}else if (summ<=19 && summ>=24){
+			}else if (summ>=19 && summ<=24){
 				testresult="Замкнутий"
-			}else if (summ<=14 && summ>=18 ){
+			}else if (summ>=14 && summ<=18 ){
 				testresult="Товариський"
-			}else if (summ<=9 && summ>=13 ){
+			}else if (summ>=9 && summ<=13 ){
 				testresult="Комунікабельний"
-			}else if (summ<=4 && summ>=8 ){
+			}else if (summ>=4 && summ<=8 ){
 				testresult="Балакучий"
 			}else {
 				testresult="Занадто балакучий"

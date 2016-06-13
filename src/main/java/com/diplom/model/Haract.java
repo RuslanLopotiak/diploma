@@ -78,9 +78,6 @@ public class Haract {
 	}
 	public void setTemper(String temper) {
 		this.temper = temper;
-	}
-
-
-	
+	}	
 
 }

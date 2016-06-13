@@ -1,7 +1,7 @@
 .source {
 	position:fixed;
-	height:580px;
-
+	height:610px;
+	color:#333;
 	top:70px;
 	left: 100%;
  	width: auto;
@@ -13,12 +13,12 @@
 .branch {
 	margin-left:20px;
 	heigth:79px;
-	overflow-y:hidden;
-	width: 250px;
+	overflow:hidden;
+	width: 70%;
 	border-top:1px solid white;
 }
 .branch h5{
-
+	color:white;
 	padding-left:20px;
 }
 
@@ -26,11 +26,13 @@
 	height:500px;
 	overflow-y:scroll;
 	background-color: #333;
-	width: 500px;
+	width: 400px;
 	padding-left: 20px;
 }
 
 .cont h2 {
+	color:#BFBFBF;
+	
 	margin-bottom: 10px;
 }
 
@@ -39,8 +41,8 @@
 	width: auto;
 	heigth: 50px;
 	position: relative;
-	left: -50px;
-	top:0;
+	left: -70px;
+	top:20px];
 	
 }
 
@@ -49,6 +51,6 @@
 }
 
 .source:hover {
-	
-	left: 75%;
+	z-index:9;
+	left: 72%;
 }

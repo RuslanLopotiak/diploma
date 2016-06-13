@@ -10,8 +10,6 @@
 <ul>	
 <li><a href="${context}/home">Головна</a></li>
 <sec:authorize access="isAnonymous()">
-<li><a href="${context}/login">Вхід</a></li>
-<li><a href="${context}/registration">Регістація</a></li>
 </sec:authorize>
 
 	<sec:authorize access="hasRole('ROLE_ADMIN')">
@@ -30,7 +28,40 @@
 </sec:authorize>
 
 
+<a id="login"><i class="fa fa-sign-in fa-2x" aria-hidden="true"></i></a>
+
 
 </ul>
 </div>
+<div class="login-body" >
+<sec:authorize access="isAnonymous()">
+<a href="${context}/login" class="btn btn-primary row">Вхід</a>
+<a href="" class="btn btn-primary row" data-toggle="modal" data-target="#myModal">Регістрація</a>
+</sec:authorize>
+<sec:authorize access="isAuthenticated()">
+<a href="<c:url value="/j_spring_security_logout"/>" class="btn btn-primary row">Вихід</a>
+</sec:authorize>
+</div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="height:102.22222px;">
+    <a href="${context }/registrationSt"><button class="btn btn-primary col-xs-4" >Студент</button></a>
+
+<a href="${context }/registrationTeath"><button class="btn btn-primary col-xs-4" >Вчитель</button></a>
+    
+    </div>
+
+  </div>
+</div>
+
+
+
+</ul>
+</div>
+
+<script src="resources/js/header.js"></script>
 

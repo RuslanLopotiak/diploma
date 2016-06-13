@@ -5,7 +5,7 @@
 
 
 </select>
-<form class="registration" id=" formx" method="POST" action="javascript:void(null);" onsubmit="registrationSt()">
+<form class="registration col-xs-5" id=" formx" method="POST" action="javascript:void(null);" onsubmit="registrationSt()">
 	<h4>Ім'я</h4>
 	<input class="form-control" type="text" id="name" name="name" />
 	<h4>Прізвище</h4>
